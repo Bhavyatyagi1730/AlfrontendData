@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "AdminFirstpage";
+}
+
+
+
+<link href="~/Content/adminFirst.css" rel="stylesheet" />
+<script src="~/Content/JavascriptFile/Graph.js"></script>
+
+
+
+<div class="maindiv">
+    <div class="Helpdesk">
+        <img src="~/Image/AdminFirstpage/Helpdesk.jpg" alt="image" />
+        <button class="loginbtn">Logout</button>
+    </div>
+    <div class="contentall">
+        <div class="sideoption">
+            <span><h3>@Html.ActionLink("Dashboard", "AdminFirstpage", "Adminuser", new { @class = "my-link" })</h3></span>
+            <hr />
+
+            <span><h3>@Html.ActionLink("Tickets", "Ticketdetails","Adminuser", new { @class = "my-link" })</h3></span>
+            <hr />
+
+        </div>
+        <div class="maindata">
+            <div class="ticketsdata">
+                <div class="card1">
+                    <div class="col">
+
+                        <p>@Html.ActionLink("Create" , "Create" , "Adminuser", new { @class = "my-link" })</p>
+                        @*<a href="Create/Adminuser" class="my-link">Create</a>*@
+                    </div>
+                    <div class="imgi">
+                        <img src="https://o.remove.bg/downloads/2db6c06b-7d5f-4b21-b73d-79536c1f7005/images-removebg-preview.png"
+                             alt="image" />
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="col">
+                        <p>@Html.ActionLink("ViewUser", "Addnewuser", "Adminuser", new { @class = "my-link" })</p>
+                    </div>
+                    <div class="imgii">
+                        <img src="https://o.remove.bg/downloads/d142fe31-5628-4821-b5a6-0b595fe9c881/204-2045091_group-together-teamwork-icon-people-icon-flat-png-removebg-preview.png"
+                             alt="image" />
+                    </div>
+
+                </div>
+                <div class="card3">
+                    <div class="col">
+
+                        <p>AssignUser</p>
+                    </div>
+                    <div class="imgii">
+                        <img src="https://o.remove.bg/downloads/1f437505-d812-4e9c-9353-9374ee7202f9/1200px-Add_user_icon__blue_.svg-removebg-preview.png"
+                             alt="image" />
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="col">
+                        <h1>19</h1>
+                        <p>total tickets</p>
+                    </div>
+                    <div class="imgii">
+                        <img src="https://www.freeiconspng.com/uploads/business-chart-diagram-icon-0.png"
+                             alt="image" />
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="heading">
+                Tickets Completion Rate
+                <div class="line"></div>
+            </h1>
+            <div class="wrapper">
+                <div class="graph-container">
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <h5>HelpDesk</h5>
+
+        <div class="credex">
+            <p> 2023 Credex Technology. All Rights Reserved</p>
+            <div class="phon">
+                <img src="~/Image/AdminFirstpage/phone.jpg" />
+                <p>+1-408-703-6930</p>
+            </div>
+            <div class="ema">
+                <img src="~/Image/AdminFirstpage/email.png" />
+                <p>info@credextechnology.com</p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+
+    </div>
+</body>
+
